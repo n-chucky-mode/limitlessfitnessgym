@@ -32,8 +32,10 @@
       src="images/facility.jpg"
 
   </header>
-  <nav>
-    Main Navigation
+  <nav aria-label="Main Navigation">
+  <!-- I added aria-label so screen readers know what this nav is for -->
+  <h2>Main Navigation</h2><!-- I changed “Main Navigation” into an H2 to match the required outline -->
+
     <ul>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Classes</a></li>
@@ -43,9 +45,11 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <main>
+  <main id="main-content">
+  <!-- I added id="main-content" so the skip link actually has a real target -->
+
     <section>
-      About Us
+      <h2>About Us</h2><!-- I changed this into an H2 to match the outline -->
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
       <section>
         What Sets Us Apart
