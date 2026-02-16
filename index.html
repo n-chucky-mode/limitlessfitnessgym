@@ -29,7 +29,13 @@
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
     
-      src="images/facility.jpg"
+    <img
+    src="images/facility.jpg"
+    srcset="images/facility-320w.jpg 320w, images/facility-768w.jpg 768w, images/facility.jpg 1200w"
+    sizes="(max-width: 600px) 90vw, (max-width: 1024px) 80vw, 1200px"
+    alt="Inside the Limitless Fitness gym with workout equipment and open training space.">
+    <!-- I added a responsive image using srcset/sizes so phones load smaller files, and I wrote alt text that describes what’s in the photo -->
+
 
   </header>
   <nav aria-label="Main Navigation">
