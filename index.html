@@ -179,6 +179,10 @@
           <!--add accessibility to the form-->
           <form method="post" action="https://wp.zybooks.com/form-viewer.php">
          <!-- I added a real form element with method POST and the exact action URL the assignment requires -->
+          <fieldset>
+          <legend>Membership Sign-Up Form</legend>
+          <!-- $ I added a fieldset and legend so screen readers announce what this form section is about -->
+
 
         <div>
           <label for="full-name">Full Name</label>
@@ -223,6 +227,7 @@
 
         <button type="submit">Submit</button>
         <!-- I used a real submit button so it works with keyboard + screen readers -->
+         </fieldset><!--closed the fieldset to keep the form grouped-->
         </form><!--end of form-->
   
     </section><!--end of form section ************************************-->
