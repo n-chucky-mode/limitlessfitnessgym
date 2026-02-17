@@ -114,22 +114,65 @@
         <li>Annual Memberships: Commit to your fitness journey and enjoy exclusive perks.</li>
         <li>Family & Group Plans: Get fit together and save more.</li>
       </ul>
+
+      <!--**************************Updating contents inside form a lil sloppy ************************************-->
       <section id="membership-form">
-        <h3>Join Limitless Fitness Today!</h3><!-- I made this an H3 because it’s a sub-section under Membership Options -->
-        <p>Fill out the form below to kickstart your fitness journey:</p>
-<!--add accessibility to the form-->
-        Full Name
-        Email Address
-        Phone Number
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
-      </section>
-    </section>
+      
+          <h3>Join Limitless Fitness Today!</h3><!-- I kept this as an H3 because it’s a sub-section under Membership Options -->
+          <p>Fill out the form below to kickstart your fitness journey:</p>
+
+          <!--add accessibility to the form-->
+          <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+         <!-- I added a real form element with method POST and the exact action URL the assignment requires -->
+
+        <div>
+          <label for="full-name">Full Name</label>
+          <!-- I added a label for accessibility, and the for="" matches the input id="" exactly -->
+          <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+          <!-- I used type="text" for names, added autocomplete to help users, and required because it’s essential -->
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <!-- I added a label that matches the id so screen readers announce it correctly -->
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <!-- I used type="email" so browsers validate the format automatically -->
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <!-- I added a label and used a phone-specific input type -->
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+          <!-- I used type="tel" because it’s the appropriate type for phone numbers -->
+        </div>
+
+        <div>
+          <label for="membership-type">Membership Type</label>
+          <!-- I used a label for the select so it’s accessible -->
+          <select id="membership-type" name="membership-type" required>
+            <!-- I used a select dropdown because the assignment lists a set of membership options -->
+            <option value="">Select a Membership Option</option>
+            <!-- I kept this as the “prompt” option so the user has to choose something -->
+            <option value="monthly">Monthly Membership</option>
+            <option value="annual">Annual Membership</option>
+            <option value="family">Family &amp; Group Plans</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="fitness-goals">Tell us about your fitness goals:</label>
+          <!-- I used a textarea since goals can be longer than one line -->
+          <textarea id="fitness-goals" name="fitness-goals" rows="4"></textarea>
+          <!-- I added rows so the textarea has a reasonable default size -->
+        </div>
+
+        <button type="submit">Submit</button>
+        <!-- I used a real submit button so it works with keyboard + screen readers -->
+        </form><!--end of form-->
+  
+    </section><!--end of form section ************************************-->
+
+  
   </main>
   <aside>
     Testimonials
